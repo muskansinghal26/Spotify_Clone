@@ -40,6 +40,8 @@ masterPlay.addEventListener('click', ()=>{
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
         gif.style.opacity = 1;
+        document.getElementById(songIndex).classList.remove('fa-play-circle');
+        document.getElementById(songIndex).classList.add('fa-pause-circle');
 
     }
     else{
@@ -47,7 +49,8 @@ masterPlay.addEventListener('click', ()=>{
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
         gif.style.opacity = 0;
-
+        document.getElementById(songIndex).classList.remove('fa-pause-circle');
+        document.getElementById(songIndex).classList.add('fa-play-circle');
     }
 })
 
@@ -83,16 +86,24 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
           
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-      
-
-
-        audioElement.src = `songs/${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
-        audioElement.currentTime = 0;
-        audioElement.play();
-        gif.style.opacity = 1;
-        masterPlay.classList.remove('fa-play-circle');
-        masterPlay.classList.add('fa-pause-circle');
+        if(audioElement.paused){
+            audioElement.src = (`songs/${songIndex+1}.mp3`);
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.play();
+            element.classList.remove('fa-play-circle');
+            element.classList.add('fa-pause-circle');
+            masterPlay.classList.remove('fa-play-circle');
+            masterPlay.classList.add('fa-pause-circle');
+            gif.style.opacity = 1;
+        }
+        else{
+            audioElement.pause();
+            element.classList.remove('fa-pause-circle');
+            element.classList.add('fa-play-circle');
+            masterPlay.classList.remove('fa-pause-circle');
+            masterPlay.classList.add('fa-play-circle');
+            gif.style.opacity=0;
+        }
     })
 })
 
