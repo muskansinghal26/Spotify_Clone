@@ -136,7 +136,7 @@ span.songName{
     transition: opacity 0.4s ease-in;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 750px)  {
     span.songName{
         display: flex;
         text-align: left;
