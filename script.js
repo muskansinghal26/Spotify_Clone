@@ -11,6 +11,7 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 
 let songs  = [
+<<<<<<< HEAD
     {songName: " Shake It Off", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
     {songName: " Look What You Made Me Do", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg"},
     {songName: " Wildest Dreams", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg"},
@@ -21,6 +22,18 @@ let songs  = [
     {songName: " I Knew You Were Trouble.", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg"},
     {songName: " Love Story", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg"},
     {songName: " Out of the Woods", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg"},
+=======
+    {songName: "Shake It Off", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
+    {songName: "Look What You Made Me Do", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg"},
+    {songName: "Wildest Dreams", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg"},
+    {songName: "Getaway Car 2017 ", filePath: "songs/4.mp3", coverPath: "covers/4.jpeg"},
+    {songName: "Ready For It_  2017 ", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg"},
+    {songName: "Blank Space", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg"},
+    {songName: "Bad Blood", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg"},
+    {songName: "I Knew You Were Trouble.", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg"},
+    {songName: "Love Story", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg"},
+    {songName: "Out of the Woods", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg"},
+>>>>>>> 470c5646c7f4ab59bd39189ed245c896cb2a0757
 ]
 
 songItems.forEach((element,i)=>{
