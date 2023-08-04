@@ -135,3 +135,66 @@ span.songName{
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
+@media only screen and (max-width: 600px)  {
+    span.songName{
+        display: flex;
+        text-align: left;
+        justify-content: left;
+        font-size: 0.9rem;
+        width: 80%;
+        /* margin: -10px; */
+    }
+    div.songItem{
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+        width:100%;
+        margin:4px;
+    }
+    img{
+        margin: 0px 4px;
+        border-radius:2px;
+        width: 36px;
+    }
+    span.timestamp{
+        display: flex;
+        justify-content: right;
+        margin: 0px 4px;
+    }
+    div.bottom{
+        height: 140px;
+    }
+    span.songlistplay{
+        display: flex;
+        justify-content: right;
+    }
+    span#masterSongName{
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        top: -19px;
+        left: 10;
+        width: 100%;
+    }
+    i#masterPlay.far.fa-3x.fa-play-circle::before{
+        font-size: 2rem;
+    }
+    i#masterPlay.far.fa-3x.fa-pause-circle::before{
+        font-size: 2rem;
+    }
+    i#previous.fas.fa-3x.fa-step-backward::before{
+        font-size: 2rem;
+    }
+   i#next.fas.fa-3x.fa-step-forward::before{
+        font-size: 2rem;
+    }
+   #gif{
+    position: relative;
+    left: 260px;
+    top: 30px;
+   }
+    
+    
+    
+}
