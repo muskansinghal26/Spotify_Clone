@@ -163,7 +163,7 @@ span.songName{
         margin: 0px 4px;
     }
     div.bottom{
-        height: 140px;
+        height: 145px;
     }
     span.songlistplay{
         display: flex;
@@ -176,7 +176,7 @@ span.songName{
         justify-content: center;
         top: -19px;
         left: 10;
-        width: 100%;
+        width: 210%;
     }
     i#masterPlay.far.fa-3x.fa-play-circle::before{
         font-size: 2rem;
@@ -192,8 +192,8 @@ span.songName{
     }
    #gif{
     position: relative;
-    left: 260px;
-    top: 30px;
+    left: 0px;
+    top: 0px;
    }
     
     
